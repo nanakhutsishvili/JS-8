@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS 8</title>
+    <style>
+        input {margin-left: 20px;
+        width: 250px;
+    height: 30px;}
+
+    button  {margin-left: 20px;
+        width: 100px;
+    height: 30px;}
+    </style>
+</head>
+<body>
+    გაყოფა
+    <input type="text" placeholder="ჩაწერეთ გასაყოფი" id="gasakopi">
+    <input type="text" placeholder="ჩაწერეთ გამყოფი" id="gamkopi">
+    <button onclick="gamotvla()">გამოთვლა</button>
+
+    <br>
+    <br>
+    
+
+    გამრავლება
+    <input type="text" placeholder="ჩაწერეთ სამრავლი" id="samravli">
+    <input type="text" placeholder="ჩაწერეთ მამრავლი" id="mamravli">
+    <button onclick="gamotvlaa()">გამოთვლა</button>
+
+    <br>
+    <br>
+
+    მიმატება
+    <input type="text" placeholder="ჩაწერეთ პირველი შესაკრები" id="pshes">
+    <input type="text" placeholder="ჩაწერეთ მეორე შესაკრები" id="mshes">
+    <button onclick="gamotvlaaa()">გამოთვლა</button>
+
+    <br>
+    <br>
+
+    გამოკლება
+    <input type="text" placeholder="ჩაწერეთ პირველი შესაკრები" id="saklebi">
+    <input type="text" placeholder="ჩაწერეთ მეორე შესაკრები" id="maklebi">
+    <button onclick="gamotvlaaaa()">გამოთვლა</button>
+
+
+    <script>
+        function gamotvla() {
+            var x = document.getElementById("gasakopi").value;
+            var y = document.getElementById("gamkopi").value;
+
+
+            if(y==0)  {window.alert("ნულზე გაყოფა არ შეიძლება");
+            return;
+       }
+            window.alert(x/y);
+        }
+
+        function gamotvlaa() {
+            var x = document.getElementById("samravli").value;
+            var y = document.getElementById("mamravli").value;
+
+            window.alert(x*y);
+        }
+
+        function gamotvlaaa() {
+            var x = document.getElementById("pshes").value;
+            var y = document.getElementById("mshes").value;
+
+            window.alert(x+y);
+        }
+
+        function gamotvlaaaa() {
+            var x = document.getElementById("saklebi").value;
+            var y = document.getElementById("maklebi").value;
+
+            window.alert(x-y);
+        }
+        
+    </script>
+</body>
+</html>
